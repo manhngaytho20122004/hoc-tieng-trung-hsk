@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|c:\\users\\luong\\desktop\\h\u1ECDc ti\u1EBFng trung\\ontaptuvung\\ontaptuvung\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|c:\\users\\luong\\desktop\\h\u1ECDc ti\u1EBFng trung\\ontaptuvung\\ontaptuvung\\views\\vocabulary\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\views\\vocabulary\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -43,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|c:\\users\\luong\\desktop\\h\u1ECDc ti\u1EBFng trung\\ontaptuvung\\ontaptuvung\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|c:\\users\\luong\\desktop\\h\u1ECDc ti\u1EBFng trung\\ontaptuvung\\ontaptuvung\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -74,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -83,19 +83,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Data\\SeedData.cs",
-              "RelativeDocumentMoniker": "OnTapTuVung\\Data\\SeedData.cs",
-              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Data\\SeedData.cs",
-              "RelativeToolTip": "OnTapTuVung\\Data\\SeedData.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAAAIcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T17:33:02.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Program.cs",
               "RelativeDocumentMoniker": "OnTapTuVung\\Program.cs",
@@ -108,20 +95,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Vocabulary\\Index.cshtml",
               "RelativeDocumentMoniker": "OnTapTuVung\\Views\\Vocabulary\\Index.cshtml",
-              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Vocabulary\\Index.cshtml*",
-              "RelativeToolTip": "OnTapTuVung\\Views\\Vocabulary\\Index.cshtml*",
-              "ViewState": "AgIAAB0DAAAAAAAAAAAAwEcDAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Vocabulary\\Index.cshtml",
+              "RelativeToolTip": "OnTapTuVung\\Views\\Vocabulary\\Index.cshtml",
+              "ViewState": "AgIAAJ0BAAAAAAAAAAAAwMUBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-26T16:48:24.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Vocabulary.cs",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Models\\Vocabulary.cs",
               "RelativeDocumentMoniker": "OnTapTuVung\\Models\\Vocabulary.cs",
@@ -134,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "VocabulariesController.cs",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Controllers\\VocabulariesController.cs",
               "RelativeDocumentMoniker": "OnTapTuVung\\Controllers\\VocabulariesController.cs",
@@ -147,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Quiz.cshtml",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Vocabulary\\Quiz.cshtml",
               "RelativeDocumentMoniker": "OnTapTuVung\\Views\\Vocabulary\\Quiz.cshtml",
@@ -160,7 +147,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "OnTapTuVung\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "OnTapTuVung\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-26T16:30:25.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "OnTapTuVung\\Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Data\\SeedData.cs",
+              "RelativeToolTip": "OnTapTuVung\\Data\\SeedData.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAAIcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T17:33:02.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\appsettings.json",
               "RelativeDocumentMoniker": "OnTapTuVung\\appsettings.json",
@@ -173,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Connect.cs",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Data\\Connect.cs",
               "RelativeDocumentMoniker": "OnTapTuVung\\Data\\Connect.cs",
@@ -186,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GetQuizQuestions.cshtml",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Vocabulary\\GetQuizQuestions.cshtml",
               "RelativeDocumentMoniker": "OnTapTuVung\\Views\\Vocabulary\\GetQuizQuestions.cshtml",
@@ -199,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "OnTapTuVung\\Views\\Home\\Index.cshtml",
@@ -208,19 +221,6 @@
               "ViewState": "AgIAAIkCAAAAAAAAAAAAwK0CAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-26T16:06:55.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "OnTapTuVung\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "OnTapTuVung\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAwCIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-26T16:30:25.943Z",
               "EditorCaption": ""
             },
             {
