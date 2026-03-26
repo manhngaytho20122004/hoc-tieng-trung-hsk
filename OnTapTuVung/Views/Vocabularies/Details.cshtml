@@ -1,0 +1,54 @@
+﻿@model OnTapTuVung.Models.Vocabulary
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Vocabulary</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IdHSK)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdHSK)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TuVung)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TuVung)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Pinyn)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Pinyn)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TuLoai)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TuLoai)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HanViet)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HanViet)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nghia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nghia)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

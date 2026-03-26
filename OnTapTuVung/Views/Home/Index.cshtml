@@ -1,0 +1,686 @@
+﻿@{
+    ViewData["Title"] = "Học Tiếng Trung - Ôn Từ Vựng HSK";
+}
+
+<style>
+    /* Reset và style chính */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', 'Poppins', 'Quicksand', system-ui, -apple-system, sans-serif;
+        background: linear-gradient(135deg, #f8fff4 0%, #e8f5e9 100%);
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    /* Floating animals background */
+    .floating-animals {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .floating-animal {
+        position: absolute;
+        font-size: 40px;
+        opacity: 0.1;
+        animation: floatAround 20s infinite linear;
+    }
+
+    @@keyframes floatAround {
+        0% {
+            transform: translateX(-10%) translateY(0) rotate(0deg);
+        }
+
+        50% {
+            transform: translateX(10%) translateY(-20px) rotate(10deg);
+        }
+
+        100% {
+            transform: translateX(-10%) translateY(0) rotate(0deg);
+        }
+    }
+
+    /* Header */
+    .header {
+        text-align: center;
+        padding: 60px 20px 40px;
+        background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+        border-radius: 0 0 50px 50px;
+        box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2);
+        margin-bottom: 50px;
+        margin-top: -20px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%);
+            background-size: 50px 50px;
+            animation: moveDots 20s linear infinite;
+            pointer-events: none;
+        }
+
+    @@keyframes moveDots {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: translate(50px, 50px);
+        }
+    }
+
+    .header h1 {
+        font-size: 3rem;
+        color: white;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        position: relative;
+        z-index: 1;
+    }
+
+        .header h1 i {
+            margin-right: 15px;
+            animation: bounce 2s infinite;
+            display: inline-block;
+        }
+
+    @@keyframes bounce {
+        0%, 100% {
+            transform: translateY(0) rotate(0deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotate(5deg);
+        }
+    }
+
+    .header p {
+        font-size: 1.2rem;
+        color: rgba(255,255,255,0.95);
+        font-weight: 500;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header-emoji {
+        position: absolute;
+        bottom: -20px;
+        right: 20px;
+        font-size: 80px;
+        opacity: 0.2;
+        pointer-events: none;
+        animation: wave 3s ease-in-out infinite;
+        transform-origin: center;
+    }
+
+    @@keyframes wave {
+        0%, 100% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(15deg);
+        }
+
+        75% {
+            transform: rotate(-10deg);
+        }
+    }
+
+    /* Container */
+    .container-custom {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Grid các box HSK */
+    .hsk-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    /* Box HSK Card */
+    .hsk-card {
+        background: white;
+        border-radius: 25px;
+        padding: 30px 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        display: block;
+        animation: fadeInUp 0.6s ease-out;
+        animation-fill-mode: both;
+    }
+
+    @@keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .hsk-card:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .hsk-card:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .hsk-card:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    .hsk-card:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+    .hsk-card:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+
+    .hsk-card:nth-child(6) {
+        animation-delay: 0.6s;
+    }
+
+    .hsk-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: linear-gradient(90deg, #66bb6a, #2e7d32);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+    }
+
+    .hsk-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(46,125,50,0.05) 0%, rgba(76,175,80,0.05) 100%);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        pointer-events: none;
+    }
+
+    .hsk-card:hover {
+        transform: translateY(-15px) scale(1.02);
+        box-shadow: 0 25px 45px rgba(46, 125, 50, 0.2);
+    }
+
+        .hsk-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .hsk-card:hover::after {
+            opacity: 1;
+        }
+
+    /* Level badge */
+    .level-badge {
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(135deg, #66bb6a, #2e7d32);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        box-shadow: 0 10px 20px rgba(46, 125, 50, 0.3);
+        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        position: relative;
+    }
+
+        .level-badge::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(102,187,106,0.3), rgba(46,125,50,0.3));
+            animation: pulse 2s infinite;
+            z-index: -1;
+        }
+
+    @@keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 0.5;
+        }
+
+        100% {
+            transform: scale(1.2);
+            opacity: 0;
+        }
+    }
+
+    .hsk-card:hover .level-badge {
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    .level-number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: white;
+        position: relative;
+        z-index: 1;
+    }
+
+    .level-emoji {
+        font-size: 40px;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+        animation: bounce 1s infinite;
+    }
+
+    /* Title */
+    .hsk-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #2e7d32;
+        margin-bottom: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .hsk-card:hover .hsk-title {
+        color: #4caf50;
+        transform: scale(1.05);
+    }
+
+    /* Description */
+    .hsk-desc {
+        color: #6b7280;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    /* Stats */
+    .stats {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    .stat-item {
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .hsk-card:hover .stat-item {
+        transform: translateY(-3px);
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2e7d32;
+        transition: all 0.3s ease;
+    }
+
+    .hsk-card:hover .stat-number {
+        color: #4caf50;
+        transform: scale(1.1);
+        display: inline-block;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+        color: #9ca3af;
+        margin-top: 5px;
+    }
+
+    /* Icon decoration */
+    .deco-icon {
+        position: absolute;
+        bottom: -10px;
+        right: -10px;
+        font-size: 80px;
+        opacity: 0.08;
+        pointer-events: none;
+        transition: all 0.4s ease;
+    }
+
+    .hsk-card:hover .deco-icon {
+        opacity: 0.15;
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    /* Footer */
+    .footer-custom {
+        text-align: center;
+        padding: 30px;
+        color: #6b7280;
+        border-top: 1px solid rgba(46, 125, 50, 0.1);
+        margin-top: 40px;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Loading animation */
+    .loading-container {
+        text-align: center;
+        grid-column: 1/-1;
+        padding: 60px;
+    }
+
+    .loading {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 20px;
+        border: 4px solid rgba(46,125,50,0.2);
+        border-radius: 50%;
+        border-top-color: #2e7d32;
+        animation: spin 1s ease-in-out infinite;
+    }
+
+    @@keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .loading p {
+        color: #2e7d32;
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    /* Responsive */
+    @@media (max-width: 768px) {
+        .header h1 {
+            font-size: 2rem;
+        }
+
+        .hsk-grid {
+            gap: 20px;
+        }
+
+        .hsk-card {
+            padding: 20px;
+        }
+
+        .level-badge {
+            width: 80px;
+            height: 80px;
+        }
+
+        .level-number {
+            font-size: 2rem;
+        }
+    }
+
+    /* Button styles */
+    .reload-btn {
+        margin-top: 15px;
+        padding: 10px 25px;
+        background: linear-gradient(135deg, #2e7d32, #4caf50);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(46,125,50,0.3);
+    }
+
+        .reload-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(46,125,50,0.4);
+        }
+
+        .reload-btn i {
+            margin-right: 8px;
+        }
+</style>
+
+<!-- Floating animals background -->
+<div class="floating-animals">
+    <div class="floating-animal" style="top: 10%; left: 5%; animation-duration: 25s;">🐼</div>
+    <div class="floating-animal" style="top: 70%; left: 85%; animation-duration: 30s;">🐨</div>
+    <div class="floating-animal" style="top: 85%; left: 15%; animation-duration: 22s;">🐯</div>
+    <div class="floating-animal" style="top: 20%; left: 90%; animation-duration: 28s;">🦊</div>
+    <div class="floating-animal" style="top: 50%; left: 10%; animation-duration: 35s;">🐱</div>
+    <div class="floating-animal" style="top: 40%; left: 95%; animation-duration: 26s;">🐶</div>
+    <div class="floating-animal" style="top: 75%; left: 45%; animation-duration: 32s;">🐰</div>
+</div>
+
+<div class="header">
+    <h1>
+        <i class="fas fa-panda"></i>
+        Học Tiếng Trung Cùng Mạnh Đẹp Trai
+    </h1>
+    <p>🌟 Chọn cấp độ HSK để bắt đầu hành trình chinh phục tiếng Trung 🌟</p>
+    <div class="header-emoji">
+        🎋🌸🐉
+    </div>
+</div>
+
+<div class="container-custom">
+    <div class="hsk-grid" id="hskGrid">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <p>🐼 Đang tải dữ liệu... Hãy chờ xíu nhé! 🐼</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer-custom">
+    <p>
+        <i class="fas fa-heart" style="color: #ff6b6b; animation: bounce 1s infinite;"></i>
+        Học vui - Nhớ lâu - Đậu HSK
+        <i class="fas fa-leaf" style="color: #4caf50;"></i>
+    </p>
+    <p style="font-size: 12px; margin-top: 10px;">
+        <i class="fas fa-music"></i> Click vào từ vựng để nghe phát âm |
+        <i class="fas fa-gamepad"></i> Làm quiz để kiểm tra trình độ
+    </p>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            console.log("Document ready, loading HSK levels...");
+            loadHSKLevels();
+        });
+
+        function loadHSKLevels() {
+            console.log("Calling GetHSKLevels...");
+            $.ajax({
+                url: '/Home/GetHSKLevels',
+                type: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    console.log("Data received:", data);
+                    if (data.error) {
+                        $('#hskGrid').html(`
+                            <div style="text-align: center; grid-column: 1/-1; padding: 60px;">
+                                <i class="fas fa-exclamation-triangle" style="font-size: 60px; color: #f39c12; margin-bottom: 20px;"></i>
+                                <p style="color: #e67e22; font-size: 18px; margin-bottom: 15px;"><strong>😢 Ôi! Có lỗi xảy ra</strong></p>
+                                <p style="color: #7f8c8d;">${data.error}</p>
+                                <button onclick="location.reload()" class="reload-btn">
+                                    <i class="fas fa-sync-alt"></i> Thử lại
+                                </button>
+                            </div>
+                        `);
+                    } else if (data.length === 0) {
+                        $('#hskGrid').html(`
+                            <div style="text-align: center; grid-column: 1/-1; padding: 60px;">
+                                <i class="fas fa-database" style="font-size: 60px; color: #3498db; margin-bottom: 20px;"></i>
+                                <p style="color: #2980b9; font-size: 18px; margin-bottom: 15px;"><strong>📚 Chưa có dữ liệu HSK</strong></p>
+                                <p style="color: #7f8c8d;">Vui lòng thêm dữ liệu vào database để bắt đầu học nhé!</p>
+                                <button onclick="location.reload()" class="reload-btn">
+                                    <i class="fas fa-sync-alt"></i> Thử lại
+                                </button>
+                            </div>
+                        `);
+                    } else {
+                        renderHSKCards(data);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("AJAX Error:", {
+                        status: status,
+                        error: error,
+                        responseText: xhr.responseText,
+                        statusCode: xhr.status
+                    });
+                    $('#hskGrid').html(`
+                        <div style="text-align: center; grid-column: 1/-1; padding: 60px;">
+                            <i class="fas fa-wifi" style="font-size: 60px; color: #e74c3c; margin-bottom: 20px;"></i>
+                            <p style="color: #c0392b; font-size: 18px; margin-bottom: 15px;"><strong>🔌 Mất kết nối rồi!</strong></p>
+                            <p style="color: #7f8c8d;">Không thể kết nối đến server. Vui lòng kiểm tra lại.</p>
+                            <p style="color: #95a5a6; font-size: 12px; margin: 10px 0;">Status: ${xhr.status} - ${error}</p>
+                            <button onclick="location.reload()" class="reload-btn">
+                                <i class="fas fa-sync-alt"></i> Thử lại
+                            </button>
+                        </div>
+                    `);
+                }
+            });
+        }
+
+        function renderHSKCards(levels) {
+            const colors = [
+                { light: '#e8f5e9', dark: '#2e7d32', emoji: '🌱' },
+                { light: '#e8f5e9', dark: '#388e3c', emoji: '🍃' },
+                { light: '#f1f8e9', dark: '#43a047', emoji: '🎋' },
+                { light: '#f1f8e9', dark: '#4caf50', emoji: '🌸' },
+                { light: '#e8f5e9', dark: '#66bb6a', emoji: '🎍' },
+                { light: '#f1f8e9', dark: '#81c784', emoji: '🏆' }
+            ];
+
+            const levelEmojis = {
+                1: '🐣',
+                2: '🐥',
+                3: '🐔',
+                4: '🦅',
+                5: '🐉',
+                6: '🐲'
+            };
+
+            let html = '';
+            levels.forEach((level, index) => {
+                const color = colors[index % colors.length];
+                const levelEmoji = levelEmojis[level.loaiHSK] || '🐼';
+                html += `
+                    <a href="/Vocabulary/Index?hskId=${level.idHSK}&level=${level.loaiHSK}" class="hsk-card" style="background: white; text-decoration: none;">
+                        <div class="level-badge" style="background: linear-gradient(135deg, ${color.dark}, ${color.light});">
+                            <div class="level-number">HSK ${level.loaiHSK}</div>
+                            <div class="level-emoji">${levelEmoji}</div>
+                        </div>
+                        <div class="hsk-title">
+                            Cấp độ ${level.loaiHSK} ${color.emoji}
+                        </div>
+                        <div class="hsk-desc">
+                            ${getDescription(level.loaiHSK)}
+                        </div>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <div class="stat-number">${level.vocabularyCount || 0}</div>
+                                <div class="stat-label">
+                                    <i class="fas fa-book"></i> Từ vựng
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">${Math.ceil((level.vocabularyCount || 0) / 50)}</div>
+                                <div class="stat-label">
+                                    <i class="fas fa-clock"></i> Bài học
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fas ${getIcon(level.loaiHSK)} deco-icon"></i>
+                        <div style="position: absolute; top: 15px; left: 15px; font-size: 30px; opacity: 0.1;">
+                            ${getDecorationIcon(level.loaiHSK)}
+                        </div>
+                    </a>
+                `;
+            });
+            $('#hskGrid').html(html);
+        }
+
+        function getDescription(level) {
+            const descriptions = {
+                1: '🌱 150 từ cơ bản - Bắt đầu làm quen với tiếng Trung',
+                2: '🍃 300 từ - Mở rộng vốn từ, giao tiếp cơ bản',
+                3: '🎋 600 từ - Tự tin giao tiếp hàng ngày',
+                4: '🌸 1200 từ - Thảo luận nhiều chủ đề đa dạng',
+                5: '🎍 2500 từ - Đọc báo, xem phim không cần phụ đề',
+                6: '🏆 5000+ từ - Thành thạo như người bản xứ'
+            };
+            return descriptions[level] || `📚 ${level * 500}+ từ vựng nâng cao`;
+        }
+
+        function getIcon(level) {
+            const icons = {
+                1: 'fa-seedling',
+                2: 'fa-leaf',
+                3: 'fa-tree',
+                4: 'fa-pagelines',
+                5: 'fa-crown',
+                6: 'fa-dragon'
+            };
+            return icons[level] || 'fa-book';
+        }
+
+        function getDecorationIcon(level) {
+            const icons = {
+                1: '🐼',
+                2: '🐨',
+                3: '🦊',
+                4: '🐯',
+                5: '🦁',
+                6: '🐉'
+            };
+            return icons[level] || '🐼';
+        }
+    </script>
+}
