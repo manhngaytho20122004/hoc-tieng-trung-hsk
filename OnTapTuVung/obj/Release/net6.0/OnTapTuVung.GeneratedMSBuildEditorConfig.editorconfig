@@ -1,0 +1,97 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = OnTapTuVung
+build_property.RootNamespace = OnTapTuVung
+build_property.ProjectDir = C:\Users\luong\Desktop\Học tiếng trung\OnTapTuVung\OnTapTuVung\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\luong\Desktop\Học tiếng trung\OnTapTuVung\OnTapTuVung
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 6.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/HSKs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFNLc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/HSKs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFNLc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/HSKs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFNLc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/HSKs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFNLc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/HSKs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSFNLc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/Vocabularies/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jYWJ1bGFyaWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/Vocabularies/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jYWJ1bGFyaWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/Vocabularies/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jYWJ1bGFyaWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/Vocabularies/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jYWJ1bGFyaWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/Vocabulary/GetQuizQuestions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jYWJ1bGFyeVxHZXRRdWl6UXVlc3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/Vocabulary/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jYWJ1bGFyeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/Vocabulary/Quiz.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9jYWJ1bGFyeVxRdWl6LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luong/Desktop/Học tiếng trung/OnTapTuVung/OnTapTuVung/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-xzbbviowcj

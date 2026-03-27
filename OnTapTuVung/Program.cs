@@ -2,6 +2,9 @@
 using OnTapTuVung.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+// 🔥 Thêm đoạn này cho Render
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+builder.WebHost.UseUrls($"http://*:{port}");
 
 // Cấu hình SQLite
 var connectionString = builder.Configuration.GetConnectionString("SQLiteConnection")
