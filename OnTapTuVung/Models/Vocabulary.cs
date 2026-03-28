@@ -1,22 +1,30 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Drawing;
 
 namespace OnTapTuVung.Models
 {
+    [Table("Vocabularies")]
     public class Vocabulary
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [ForeignKey("HSK")]
+
         public int IdHSK { get; set; }
-        public string TuVung { get; set; }
-        public string Pinyn { get; set; }
-        public string TuLoai { get; set; }
-        public string HanViet { get; set; }
-        public string Nghia { get; set; }
 
-        public HSK HSK { get; set; }
+        [ForeignKey("IdHSK")]
+        public HSK? HSK { get; set; }
 
+        [Required]
+        public string TuVung { get; set; } = string.Empty;
+
+        public string Pinyn { get; set; } = string.Empty;
+
+        public string TuLoai { get; set; } = string.Empty;
+
+        public string HanViet { get; set; } = string.Empty;
+
+        [Required]
+        public string Nghia { get; set; } = string.Empty;
     }
 }

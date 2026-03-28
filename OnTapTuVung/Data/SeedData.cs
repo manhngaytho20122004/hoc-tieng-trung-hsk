@@ -1,136 +1,111 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Linq;
 using OnTapTuVung.Models;
 
 namespace OnTapTuVung.Data
 {
     public static class SeedData
     {
-        public static void Initialize(IServiceProvider serviceProvider)
+        public static async Task InitializeAsync(IServiceProvider serviceProvider)
         {
             using var context = new Connect(
                 serviceProvider.GetRequiredService<DbContextOptions<Connect>>());
 
-            // Tạo database nếu chưa có
-            context.Database.EnsureCreated();
-
             // Kiểm tra nếu đã có dữ liệu
-            if (context.Hsk.Any())
+            if (await context.Vocabulary.AnyAsync())
             {
+                Console.WriteLine("Database already has data, skipping seed...");
                 return;
             }
 
-            // Thêm 6 cấp độ HSK
-            var hskLevels = new[]
+            Console.WriteLine("Seeding database...");
+
+            // Seed dữ liệu mẫu cho HSK 1
+            var vocabularies = new List<Vocabulary>
             {
-                new HSK { LoaiHSK = 1 },
-                new HSK { LoaiHSK = 2 },
-                new HSK { LoaiHSK = 3 },
-                new HSK { LoaiHSK = 4 },
-                new HSK { LoaiHSK = 5 },
-                new HSK { LoaiHSK = 6 }
+                new Vocabulary
+                {
+                    IdHSK = 1,
+                    TuVung = "你好",
+                    Pinyn = "nǐ hǎo",
+                    TuLoai = "thán từ",
+                    HanViet = "nhĩ hảo",
+                    Nghia = "Xin chào"
+                },
+                new Vocabulary
+                {
+                    IdHSK = 1,
+                    TuVung = "谢谢",
+                    Pinyn = "xiè xie",
+                    TuLoai = "động từ",
+                    HanViet = "tạ tạ",
+                    Nghia = "Cảm ơn"
+                },
+                new Vocabulary
+                {
+                    IdHSK = 1,
+                    TuVung = "对不起",
+                    Pinyn = "duì bù qǐ",
+                    TuLoai = "cụm từ",
+                    HanViet = "đối bất khởi",
+                    Nghia = "Xin lỗi"
+                },
+                new Vocabulary
+                {
+                    IdHSK = 1,
+                    TuVung = "是",
+                    Pinyn = "shì",
+                    TuLoai = "động từ",
+                    HanViet = "thị",
+                    Nghia = "Là"
+                },
+                new Vocabulary
+                {
+                    IdHSK = 1,
+                    TuVung = "不",
+                    Pinyn = "bù",
+                    TuLoai = "phó từ",
+                    HanViet = "bất",
+                    Nghia = "Không"
+                },
+                new Vocabulary
+                {
+                    IdHSK = 1,
+                    TuVung = "我",
+                    Pinyn = "wǒ",
+                    TuLoai = "đại từ",
+                    HanViet = "ngã",
+                    Nghia = "Tôi"
+                },
+                new Vocabulary
+                {
+                    IdHSK = 1,
+                    TuVung = "你",
+                    Pinyn = "nǐ",
+                    TuLoai = "đại từ",
+                    HanViet = "nhĩ",
+                    Nghia = "Bạn"
+                },
+                new Vocabulary
+                {
+                    IdHSK = 1,
+                    TuVung = "好",
+                    Pinyn = "hǎo",
+                    TuLoai = "tính từ",
+                    HanViet = "hảo",
+                    Nghia = "Tốt"
+                }
             };
 
-            context.Hsk.AddRange(hskLevels);
-            context.SaveChanges();
+            await context.Vocabulary.AddRangeAsync(vocabularies);
+            await context.SaveChangesAsync();
 
-            // Thêm từ vựng mẫu cho HSK1
-            var hsk1 = context.Hsk.FirstOrDefault(h => h.LoaiHSK == 1);
-            if (hsk1 != null)
-            {
-                var vocabularies = new[]
-                {
-                    new Vocabulary
-                    {
-                        IdHSK = hsk1.IdHSK,
-                        TuVung = "你好",
-                        Pinyn = "nǐ hǎo",
-                        TuLoai = "感叹词",
-                        HanViet = "Nhĩ hảo",
-                        Nghia = "Xin chào"
-                    },
-                    new Vocabulary
-                    {
-                        IdHSK = hsk1.IdHSK,
-                        TuVung = "谢谢",
-                        Pinyn = "xièxiè",
-                        TuLoai = "动词",
-                        HanViet = "Tạ tạ",
-                        Nghia = "Cảm ơn"
-                    },
-                    new Vocabulary
-                    {
-                        IdHSK = hsk1.IdHSK,
-                        TuVung = "再见",
-                        Pinyn = "zàijiàn",
-                        TuLoai = "动词",
-                        HanViet = "Tái kiến",
-                        Nghia = "Tạm biệt"
-                    },
-                    new Vocabulary
-                    {
-                        IdHSK = hsk1.IdHSK,
-                        TuVung = "是",
-                        Pinyn = "shì",
-                        TuLoai = "动词",
-                        HanViet = "Thị",
-                        Nghia = "Là"
-                    },
-                    new Vocabulary
-                    {
-                        IdHSK = hsk1.IdHSK,
-                        TuVung = "不",
-                        Pinyn = "bù",
-                        TuLoai = "副词",
-                        HanViet = "Bất",
-                        Nghia = "Không"
-                    }
-                };
+            Console.WriteLine($"Seeded {vocabularies.Count} vocabularies for HSK 1");
+        }
 
-                context.Vocabulary.AddRange(vocabularies);
-                context.SaveChanges();
-            }
-
-            // Thêm từ vựng mẫu cho HSK2
-            var hsk2 = context.Hsk.FirstOrDefault(h => h.LoaiHSK == 2);
-            if (hsk2 != null)
-            {
-                var vocabularies = new[]
-                {
-                    new Vocabulary
-                    {
-                        IdHSK = hsk2.IdHSK,
-                        TuVung = "妈妈",
-                        Pinyn = "māma",
-                        TuLoai = "名词",
-                        HanViet = "Ma ma",
-                        Nghia = "Mẹ"
-                    },
-                    new Vocabulary
-                    {
-                        IdHSK = hsk2.IdHSK,
-                        TuVung = "爸爸",
-                        Pinyn = "bàba",
-                        TuLoai = "名词",
-                        HanViet = "Ba ba",
-                        Nghia = "Bố"
-                    },
-                    new Vocabulary
-                    {
-                        IdHSK = hsk2.IdHSK,
-                        TuVung = "老师",
-                        Pinyn = "lǎoshī",
-                        TuLoai = "名词",
-                        HanViet = "Lão sư",
-                        Nghia = "Giáo viên"
-                    }
-                };
-
-                context.Vocabulary.AddRange(vocabularies);
-                context.SaveChanges();
-            }
+        // Giữ lại phương thức cũ cho tương thích
+        public static void Initialize(IServiceProvider serviceProvider)
+        {
+            InitializeAsync(serviceProvider).GetAwaiter().GetResult();
         }
     }
 }
