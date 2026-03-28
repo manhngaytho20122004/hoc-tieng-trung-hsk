@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|c:\\users\\luong\\desktop\\h\u1ECDc ti\u1EBFng trung\\ontaptuvung\\ontaptuvung\\controllers\\vocabulariescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\controllers\\vocabulariescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|c:\\users\\luong\\desktop\\h\u1ECDc ti\u1EBFng trung\\ontaptuvung\\ontaptuvung\\controllers\\hskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\controllers\\hskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|c:\\users\\luong\\desktop\\h\u1ECDc ti\u1EBFng trung\\ontaptuvung\\ontaptuvung\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -35,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\views\\vocabulary\\quiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|c:\\users\\luong\\desktop\\h\u1ECDc ti\u1EBFng trung\\ontaptuvung\\ontaptuvung\\controllers\\vocabulariescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\controllers\\vocabulariescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|c:\\users\\luong\\desktop\\h\u1ECDc ti\u1EBFng trung\\ontaptuvung\\ontaptuvung\\models\\vocabulary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\models\\vocabulary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|c:\\users\\luong\\desktop\\h\u1ECDc ti\u1EBFng trung\\ontaptuvung\\ontaptuvung\\controllers\\hskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\controllers\\hskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|c:\\users\\luong\\desktop\\h\u1ECDc ti\u1EBFng trung\\ontaptuvung\\ontaptuvung\\models\\hsk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8344DF7-326A-4A7D-85C0-F0D1972E715B}|OnTapTuVung\\OnTapTuVung.csproj|solutionrelative:ontaptuvung\\models\\hsk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,19 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "OnTapTuVung\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\appsettings.Development.json",
-              "RelativeToolTip": "OnTapTuVung\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-27T01:37:29.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Dockerfile",
               "RelativeDocumentMoniker": "OnTapTuVung\\Dockerfile",
@@ -119,20 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Program.cs",
-              "RelativeDocumentMoniker": "OnTapTuVung\\Program.cs",
-              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Program.cs",
-              "RelativeToolTip": "OnTapTuVung\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T15:36:56.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Vocabulary\\Index.cshtml",
               "RelativeDocumentMoniker": "OnTapTuVung\\Views\\Vocabulary\\Index.cshtml",
@@ -144,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Vocabulary.cs",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Models\\Vocabulary.cs",
               "RelativeDocumentMoniker": "OnTapTuVung\\Models\\Vocabulary.cs",
@@ -156,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\appsettings.json",
               "RelativeDocumentMoniker": "OnTapTuVung\\appsettings.json",
@@ -168,7 +143,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "HSKsController.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Controllers\\HSKsController.cs",
+              "RelativeDocumentMoniker": "OnTapTuVung\\Controllers\\HSKsController.cs",
+              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Controllers\\HSKsController.cs",
+              "RelativeToolTip": "OnTapTuVung\\Controllers\\HSKsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T16:19:51.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VocabulariesController.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Controllers\\VocabulariesController.cs",
+              "RelativeDocumentMoniker": "OnTapTuVung\\Controllers\\VocabulariesController.cs",
+              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Controllers\\VocabulariesController.cs",
+              "RelativeToolTip": "OnTapTuVung\\Controllers\\VocabulariesController.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAAwKkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T15:55:19.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Program.cs",
+              "RelativeDocumentMoniker": "OnTapTuVung\\Program.cs",
+              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Program.cs",
+              "RelativeToolTip": "OnTapTuVung\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T15:36:56.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "OnTapTuVung\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\appsettings.Development.json",
+              "RelativeToolTip": "OnTapTuVung\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-27T01:37:29.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "render.yaml",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\render.yaml",
               "RelativeDocumentMoniker": "OnTapTuVung\\render.yaml",
@@ -180,19 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VocabulariesController.cs",
-              "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Controllers\\VocabulariesController.cs",
-              "RelativeDocumentMoniker": "OnTapTuVung\\Controllers\\VocabulariesController.cs",
-              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Controllers\\VocabulariesController.cs",
-              "RelativeToolTip": "OnTapTuVung\\Controllers\\VocabulariesController.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAAANQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T15:55:19.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Quiz.cshtml",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Vocabulary\\Quiz.cshtml",
               "RelativeDocumentMoniker": "OnTapTuVung\\Views\\Vocabulary\\Quiz.cshtml",
@@ -204,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "OnTapTuVung\\Views\\Shared\\_Layout.cshtml",
@@ -216,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "SeedData.cs",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Data\\SeedData.cs",
               "RelativeDocumentMoniker": "OnTapTuVung\\Data\\SeedData.cs",
@@ -228,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Connect.cs",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Data\\Connect.cs",
               "RelativeDocumentMoniker": "OnTapTuVung\\Data\\Connect.cs",
@@ -240,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "GetQuizQuestions.cshtml",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Vocabulary\\GetQuizQuestions.cshtml",
               "RelativeDocumentMoniker": "OnTapTuVung\\Views\\Vocabulary\\GetQuizQuestions.cshtml",
@@ -252,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "OnTapTuVung\\Views\\Home\\Index.cshtml",
@@ -264,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "OnTapTuVung\\Controllers\\HomeController.cs",
@@ -273,18 +286,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T15:53:59.956Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "HSKsController.cs",
-              "DocumentMoniker": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Controllers\\HSKsController.cs",
-              "RelativeDocumentMoniker": "OnTapTuVung\\Controllers\\HSKsController.cs",
-              "ToolTip": "C:\\Users\\luong\\Desktop\\H\u1ECDc ti\u1EBFng trung\\OnTapTuVung\\OnTapTuVung\\Controllers\\HSKsController.cs",
-              "RelativeToolTip": "OnTapTuVung\\Controllers\\HSKsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-26T16:19:51.498Z"
             },
             {
               "$type": "Document",

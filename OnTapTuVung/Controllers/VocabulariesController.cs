@@ -167,7 +167,6 @@ namespace OnTapTuVung.Controllers
                 var random = new Random();
                 var selectedVocabs = vocabularies
                     .OrderBy(x => random.Next())
-                    .Take(Math.Min(questionCount, vocabularies.Count))
                     .ToList();
 
                 var questions = new List<object>();
