@@ -4,82 +4,70 @@ using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔥 Thêm đoạn này cho Render
+// Render dùng PORT environment
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
 builder.WebHost.UseUrls($"http://*:{port}");
 
-// 🔥 Cấu hình database với PostgreSQL
+// Lấy connection string local
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-// Kiểm tra nếu chạy trên Render
-if (Environment.GetEnvironmentVariable("RENDER") == "true")
+// Nếu có DATABASE_URL (deploy trên Render) thì dùng database server
+var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
+if (!string.IsNullOrEmpty(databaseUrl))
 {
-    var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
-    if (!string.IsNullOrEmpty(databaseUrl))
+    var databaseUri = new Uri(databaseUrl);
+    var userInfo = databaseUri.UserInfo.Split(':');
+
+    var npgsqlBuilder = new NpgsqlConnectionStringBuilder
     {
-        // Chuyển đổi DATABASE_URL sang connection string PostgreSQL
-        var databaseUri = new Uri(databaseUrl);
-        var userInfo = databaseUri.UserInfo.Split(':');
+        Host = databaseUri.Host,
+        Port = databaseUri.Port,
+        Database = databaseUri.AbsolutePath.Trim('/'),
+        Username = userInfo[0],
+        Password = userInfo[1],
+        SslMode = SslMode.Require,
+        TrustServerCertificate = true,
+        Pooling = true,
+        MaxPoolSize = 20,
+        MinPoolSize = 5
+    };
 
-        var npgsqlBuilder = new NpgsqlConnectionStringBuilder
-        {
-            Host = databaseUri.Host,
-            Port = databaseUri.Port,
-            Database = databaseUri.AbsolutePath.Trim('/'),
-            Username = userInfo[0],
-            Password = userInfo[1],
-            SslMode = SslMode.Require,
-            TrustServerCertificate = true,
-            Pooling = true,
-            MaxPoolSize = 20,
-            MinPoolSize = 5
-        };
-
-        connectionString = npgsqlBuilder.ConnectionString;
-    }
+    connectionString = npgsqlBuilder.ConnectionString;
 }
 
-// Đăng ký DbContext với PostgreSQL
+// Add DbContext
 builder.Services.AddDbContext<Connect>(options =>
-    options.UseNpgsql(connectionString, npgsqlOptions =>
-    {
-        npgsqlOptions.EnableRetryOnFailure(
-            maxRetryCount: 5,
-            maxRetryDelay: TimeSpan.FromSeconds(30),
-            errorCodesToAdd: null);
-    })
-    .EnableSensitiveDataLogging()); // Giữ lại để debug
+    options.UseNpgsql(connectionString));
 
+// MVC
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Seed data (cập nhật cho PostgreSQL)
+// 🔥 Auto migrate + seed database
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
+
     try
     {
-        // Đảm bảo database được tạo
-        var dbContext = services.GetRequiredService<Connect>();
+        var db = services.GetRequiredService<Connect>();
 
-        // Tự động migrate database
-        dbContext.Database.Migrate();
-        Console.WriteLine("Database migrated successfully!");
+        Console.WriteLine("Migrating database...");
+        db.Database.Migrate();
 
-        // Seed dữ liệu
+        Console.WriteLine("Seeding database...");
         await SeedData.InitializeAsync(services);
-        Console.WriteLine("Database seeded successfully!");
+
+        Console.WriteLine("Database ready!");
     }
     catch (Exception ex)
     {
-        var logger = services.GetRequiredService<ILogger<Program>>();
-        logger.LogError(ex, "An error occurred while seeding the database.");
-        Console.WriteLine($"Error seeding database: {ex.Message}");
-        Console.WriteLine($"Stack trace: {ex.StackTrace}");
+        Console.WriteLine("Error database: " + ex.Message);
     }
 }
 
+// Middleware
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnTapTuVung")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e783c1b71b6fd5570af678b4a6b5a2399d5044f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f3bbb5da52f40cd84e6c23d7482d2070dcda8c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnTapTuVung")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnTapTuVung")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
